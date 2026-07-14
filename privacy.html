@@ -39,7 +39,7 @@
     <div class="container">
 
       <div class="policy-meta">
-        <strong>Last updated:</strong> March 2026 &nbsp;&middot;&nbsp;
+        <strong>Last updated:</strong> July 13, 2026 &nbsp;&middot;&nbsp;
         <strong>App:</strong> Durak - Classic Card Game &nbsp;&middot;&nbsp;
         <strong>Developer:</strong> Essential Dev Team &nbsp;&middot;&nbsp;
         <strong>Contact:</strong>
@@ -67,12 +67,13 @@
         <div class="policy-section">
           <h2>Information We Collect</h2>
           <p>
-            <strong>We do not collect, store, or transmit any personally identifiable
-            information directly.</strong> The App does not require you to create an account,
-            enter your name, provide an email address, or share any personal data with us.
+            The App does not require you to create an account, enter your email address,
+            or provide payment details to us. However, some data is collected and processed
+            to make certain features work — most notably online multiplayer, advertising,
+            and Game Center leaderboards, as described below.
           </p>
           <p>
-            The following limited data interactions occur through third-party services
+            The following data interactions occur through backend and third-party services
             integrated into the App:
           </p>
           <ul>
@@ -91,6 +92,36 @@
               profile information.
             </li>
           </ul>
+        </div>
+
+        <!-- Online Multiplayer -->
+        <div class="policy-section">
+          <h2>Online Multiplayer</h2>
+          <p>
+            The App offers online multiplayer matches. Online play is powered by
+            <strong>Supabase</strong>, a hosted backend service
+            (privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>).
+          </p>
+          <p>
+            To run online matches, an <strong>anonymous player identifier</strong> and
+            <strong>game data</strong> — your moves, room/lobby state, and your display
+            name if you set one — are transmitted to and stored on the multiplayer server.
+            This data is used solely to operate matches between players. It is not used to
+            identify you, and it is protected by per-user access rules so that other players
+            cannot access data that is not part of their match.
+          </p>
+        </div>
+
+        <!-- In-App Purchases -->
+        <div class="policy-section">
+          <h2>In-App Purchases</h2>
+          <p>
+            The App offers optional in-app purchases, such as coin packs. All purchases
+            are processed by <strong>Apple</strong> through the App Store's In-App Purchase
+            system. We never receive or store your payment details (such as credit card
+            numbers or billing information); payment processing is handled entirely by
+            Apple and is subject to Apple's Privacy Policy.
+          </p>
         </div>
 
         <!-- Advertising -->
@@ -120,6 +151,10 @@
             <strong>Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>.
           </p>
           <p>
+            Where required by law (for example, in the EEA and UK), a Google consent form
+            is shown before ads are served; declining shows non-personalized ads.
+          </p>
+          <p>
             For more information on how Google collects and uses data in advertising,
             please review Google's Privacy Policy at
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
@@ -137,6 +172,11 @@
             <li>
               <strong>Google AdMob</strong> — Mobile advertising platform by Google.
               Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+            </li>
+            <li>
+              <strong>Supabase</strong> — Hosted backend service that powers online
+              multiplayer (anonymous player identifier and game data).
+              Privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>
             </li>
             <li>
               <strong>Apple Game Center</strong> — Leaderboard and social gaming service
@@ -160,14 +200,17 @@
             Apple's <strong>UserDefaults</strong> system. This data:
           </p>
           <ul>
-            <li>Never leaves your device.</li>
-            <li>Is not transmitted to our servers (we operate no servers).</li>
-            <li>Is not accessible to us or any third party.</li>
+            <li>Is stored locally on your device.</li>
             <li>Is deleted when you uninstall the App.</li>
           </ul>
           <p>
             Your local win count is also stored on your device and may be synced to
             Apple Game Center if you are signed in and have granted the necessary permissions.
+          </p>
+          <p>
+            Separately, if you play online multiplayer, match-related data (your anonymous
+            player identifier, moves, room/lobby state, and display name if set) is stored
+            on our multiplayer backend as described in the "Online Multiplayer" section above.
           </p>
         </div>
 
@@ -192,10 +235,11 @@
         <div class="policy-section">
           <h2>Data Security</h2>
           <p>
-            Because we do not collect or transmit personal data to our own servers, there
-            is no central database of your information to secure on our end. All data stored
-            locally on your device is protected by iOS's built-in security mechanisms,
-            including device encryption and sandboxed app storage.
+            Data stored locally on your device is protected by iOS's built-in security
+            mechanisms, including device encryption and sandboxed app storage. Online
+            multiplayer data stored on our Supabase backend is transmitted over encrypted
+            connections (HTTPS) and protected by per-user access rules, so each player can
+            only access the data belonging to their own anonymous account and matches.
           </p>
           <p>
             For data handled by Google AdMob and Apple Game Center, please refer to the
@@ -208,10 +252,15 @@
           <h2>Your Rights and Choices</h2>
           <p>
             Depending on your location, you may have the right to access, correct, or
-            delete personal data held about you. Since we do not collect personal data
-            directly, the most relevant actions you can take are:
+            delete personal data held about you. The actions you can take are:
           </p>
           <ul>
+            <li>
+              <strong>Delete multiplayer data</strong> — You can request deletion of your
+              server-side multiplayer data (anonymous player identifier, match history,
+              and display name) by contacting us at
+              <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>.
+            </li>
             <li>
               <strong>Limit ad tracking</strong> — Go to Settings &rarr; Privacy &amp; Security
               &rarr; Tracking on your iPhone and disable tracking for the App.
